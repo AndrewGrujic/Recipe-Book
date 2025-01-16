@@ -12,8 +12,8 @@
             <ColumnDefinition ToolTip="IngredientsColumn"/>
             <ColumnDefinition ToolTip="InstructionColumn"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="AddRecipeButton" Height="50" VerticalAlignment="Top" Content="Add Recipe" Click="AddRecipeButton_Click"/>
-        <Button x:Name="AddIngredientButton" Content="Add Ingredient" Height="50" VerticalAlignment="Top" Grid.Column="1"/>
-        <ListBox x:Name="RecipeListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Height="639" VerticalAlignment="Top" Margin="10,55,10,0" Background="#FF2D2D2D" Foreground="White" />
+        <Button x:Name="AddRecipeButton" Height="50" VerticalAlignment="Top" Content="Add Recipe" Click="AddRecipeButton_Click" Background="#FF373737" Foreground="White"/>
+        <Button x:Name="AddIngredientButton" Content="Add Ingredient" Height="50" VerticalAlignment="Top" Grid.Column="1" Background="#FF373737" Foreground="White"/>
+        <ListBox x:Name="RecipeListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Height="639" VerticalAlignment="Top" Margin="10,60,10,10" Background="#FF373737" Foreground="White" MouseDoubleClick="RecipeListBox_MouseDoubleClick" MouseDown="RecipeListBox_MouseDown"/>
     </Grid>
 </Window>
